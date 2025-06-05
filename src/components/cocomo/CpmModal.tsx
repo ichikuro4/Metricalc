@@ -199,7 +199,7 @@ const RowWithCheckbox = ({
             <FormControl id={`${id}Percentage`} isDisabled={values.disabled}>
                 <FormLabel>{`${label} Percentage`}</FormLabel>
                 <Input
-                    placeholder="Example: %: 0.4 or Months: 4 or 4.8"
+                    placeholder="Ejemplo: %: 40, 65, 100"
                     type="number"
                     value={values.percentage}
                     onChange={(e) => handlePercentageChange(e, id)}
@@ -208,7 +208,7 @@ const RowWithCheckbox = ({
             <FormControl id={`${id}Cost`} isDisabled={values.disabled}>
                 <FormLabel>{`${label} Cost`}</FormLabel>
                 <Input
-                    placeholder="Example: 1000"
+                    placeholder="Ejemplo: 1000"
                     type="number"
                     value={values.cost}
                     onChange={(e) => handleCostChange(e, id)}

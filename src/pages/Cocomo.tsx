@@ -186,7 +186,12 @@ const Cocomo = () => {
 
                             <FormControl>
                                 <FormLabel>Stages?</FormLabel>
-                                <Switch id='stages' onChange={handleSwitchChange} isChecked={isStagesEnabled}/>
+                                <Switch
+                                    id='stages'
+                                    onChange={handleSwitchChange}
+                                    isChecked={isStagesEnabled}
+                                    colorScheme="green" 
+                                />
                             </FormControl>
                         </Stack>
 
@@ -281,7 +286,7 @@ const Cocomo = () => {
                                 {isStagesEnabled && (
                                     <>
                                         <Text mt={4}>
-                                            Note: Stage costs is valid only for sum of percentages = , otherwise it will give inconsistent results.
+                                            Nota: Los costos de etapa son válidos solo para la suma de porcentajes = , de lo contrario arrojará resultados inconsistentes.
                                         </Text>
                                         <Tabs variant='soft-rounded' colorScheme='green' isFitted>
                                             <TabList>

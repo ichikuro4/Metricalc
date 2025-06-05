@@ -1,9 +1,9 @@
 import { Flex, Icon, Text, useColorModeValue } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { FiBriefcase, FiUsers } from "react-icons/fi";
+import { FiCpu, FiUsers } from "react-icons/fi"; // Cambia FiBriefcase por FiCpu
 
 const items = [
-  { icon: FiBriefcase, title: "Cocomo 81", path: "/cocomo" },
+  { icon: FiCpu, title: "Cocomo 81", path: "/cocomo" }, // Usa FiCpu aquí
   //{ icon: FiBriefcase, title: "Cocomo II", path: "/cocomo-two" },
   //{ icon: FiBriefcase, title: "Puntos de Funcion", path: "/function-point" },
   //{ icon: FiBriefcase, title: "Use Case Point", path: "/use-case-point" },
@@ -31,11 +31,19 @@ const NavbarItems = ({ onClose }: NavbarItemsProps) => {
           align="center"
           mx={3}
           color={textColor}
-          _hover={{ textDecoration: "none", color: "ui.accent" }}
+          _hover={{ textDecoration: "none", color: "green.500" }} // hover verde
           onClick={onClose}
         >
-          <Icon as={icon} />
-          <Text ml={2}>{title}</Text>
+          <Icon as={icon} boxSize={6} color="green.500" /> {/* icono más grande y verde */}
+          <Text
+            ml={2}
+            fontSize="xl" 
+            fontWeight="bold" 
+            color="green.600" 
+            letterSpacing="wide"
+          >
+            {title}
+          </Text>
         </Flex>
       ))}
     </Flex>
