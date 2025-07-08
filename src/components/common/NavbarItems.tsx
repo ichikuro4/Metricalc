@@ -1,12 +1,12 @@
 import { Flex, Icon, Text, useColorModeValue } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { FiCpu, FiUsers,FiLayers } from "react-icons/fi"; // Cambia FiBriefcase por FiCpu
+import { FiCpu, FiUsers,FiLayers,FiBriefcase } from "react-icons/fi"; // Cambia FiBriefcase por FiCpu
 
 const items = [
   { icon: FiCpu, title: "Cocomo 81", path: "/cocomo" }, // Usa FiCpu aquí
   { icon: FiCpu, title: "Cocomo II", path: "/cocomo-two" },
   { icon: FiLayers, title: "Puntos de Funcion", path: "/function-point" },
-  //{ icon: FiBriefcase, title: "Use CaFse Point", path: "/use-case-point" },
+  { icon: FiBriefcase, title: "Use Case Point", path: "/use-case-point" },
 ];
 
 interface NavbarItemsProps {

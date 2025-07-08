@@ -200,9 +200,6 @@ const FunctionPoint: React.FC = () => {
         <Container as="form" onSubmit={handleSubmit} maxW="full">
           <VStack spacing={4} align="stretch">
             <Card>
-              <CardHeader>
-                <Text fontWeight="bold">Configuration</Text>
-              </CardHeader>
               <CardBody>
                 <Stack direction={['column', 'row']} spacing={4}>
                   <FormControl>
@@ -230,7 +227,6 @@ const FunctionPoint: React.FC = () => {
                 </Stack>
               </CardBody>
             </Card>
-
             <Card>
               <CardHeader>
                 <Text fontWeight="bold">Function Types</Text>
